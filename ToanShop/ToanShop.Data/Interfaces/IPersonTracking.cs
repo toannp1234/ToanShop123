@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ToanShop.Data.Interfaces
 {
@@ -16,11 +14,9 @@ namespace ToanShop.Data.Interfaces
         /// </summary>
         Guid? LastModifierUserId { get; set; }
 
-
         /// <summary>
         /// Gets or sets the date and time the object was created.
         /// </summary>
         Guid? DeleterUserId { get; set; }
-
     }
 }

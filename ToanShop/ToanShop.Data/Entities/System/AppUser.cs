@@ -23,7 +23,7 @@ namespace ToanShop.Data.Entities
             Status = status;
         }
 
-        public AppUser(Guid id, string fullName, string userName, 
+        public AppUser(Guid id, string fullName, string userName,
             string email, string phoneNumber, string avatar, Status status)
         {
             Id = id;

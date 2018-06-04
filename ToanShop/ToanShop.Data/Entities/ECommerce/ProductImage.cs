@@ -7,7 +7,7 @@ using ToanShop.Infrastructure.SharedKernel;
 namespace ToanShop.Data.Entities
 {
     [Table("ProductImages")]
-    public class ProductImage : DomainEntity<Guid>,ISortable
+    public class ProductImage : DomainEntity<Guid>, ISortable
     {
         public Guid ProductId { get; set; }
 

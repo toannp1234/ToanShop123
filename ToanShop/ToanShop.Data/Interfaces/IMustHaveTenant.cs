@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ToanShop.Data.Interfaces
 {
-    interface IMustHaveTenant
+    internal interface IMustHaveTenant
     {
-      Guid TenantId { get; set; }
-
+        Guid TenantId { get; set; }
     }
 }

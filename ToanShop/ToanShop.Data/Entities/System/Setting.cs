@@ -8,7 +8,7 @@ using ToanShop.Infrastructure.SharedKernel;
 namespace ToanShop.Data.Entities
 {
     [Table("Settings")]
-    public class Setting : DomainEntity<Guid>, ISwitchable,IHasUniqueCode
+    public class Setting : DomainEntity<Guid>, ISwitchable, IHasUniqueCode
     {
         [Required]
         [StringLength(128)]

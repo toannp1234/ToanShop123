@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ToanShop.WebApp.Models.ManageViewModels
+﻿namespace ToanShop.WebApp.Models.ManageViewModels
 {
     public class TwoFactorAuthenticationViewModel
     {

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using System;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using ToanShop.WebApp.Models;
 using ToanShop.WebApp.Models.AccountViewModels;
 using ToanShop.WebApp.Services;
@@ -430,7 +426,6 @@ namespace ToanShop.WebApp.Controllers
             return View();
         }
 
-
         [HttpGet]
         public IActionResult AccessDenied()
         {
@@ -459,6 +454,6 @@ namespace ToanShop.WebApp.Controllers
             }
         }
 
-        #endregion
+        #endregion Helpers
     }
 }

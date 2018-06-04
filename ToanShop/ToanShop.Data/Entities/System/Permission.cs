@@ -25,7 +25,5 @@ namespace ToanShop.Data.Entities
         [StringLength(128)]
         [Required]
         public Guid FunctionId { get; set; }
-
-        
     }
 }

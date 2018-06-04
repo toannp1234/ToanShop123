@@ -9,7 +9,7 @@ namespace ToanShop.Data.Entities
 {
     [Table("Pages")]
     public class Page : DomainEntity<Guid>, ISwitchable
-        ,IHasUniqueCode,IHasSeoMetaData
+        , IHasUniqueCode, IHasSeoMetaData
     {
         public Page()
         {
@@ -25,11 +25,9 @@ namespace ToanShop.Data.Entities
             Status = status;
         }
 
-
         [Required]
         [MaxLength(256)]
         public string Name { set; get; }
-
 
         public string Content { set; get; }
         public Status Status { set; get; }
@@ -37,6 +35,7 @@ namespace ToanShop.Data.Entities
         [Required]
         [MaxLength(256)]
         public string UniqueCode { set; get; }
+
         public string SeoPageTitle { set; get; }
         public string SeoAlias { set; get; }
         public string SeoKeywords { set; get; }

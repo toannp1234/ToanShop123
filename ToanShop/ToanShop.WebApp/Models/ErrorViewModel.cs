@@ -1,5 +1,3 @@
-using System;
-
 namespace ToanShop.WebApp.Models
 {
     public class ErrorViewModel

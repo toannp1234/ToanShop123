@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 using ToanShop.Data.Interfaces;
 using ToanShop.Infrastructure.Enums;
 using ToanShop.Infrastructure.SharedKernel;
@@ -10,7 +8,7 @@ using ToanShop.Infrastructure.SharedKernel;
 namespace ToanShop.Data.Entities.Advs
 {
     [Table("Advertistments")]
-    public class Advertisment : DomainEntity<Guid>, ISwitchable, ISortable,IDateTracking
+    public class Advertistment : DomainEntity<Guid>, ISwitchable, ISortable, IDateTracking
     {
         [StringLength(250)]
         public string Name { get; set; }
@@ -26,7 +24,7 @@ namespace ToanShop.Data.Entities.Advs
 
         public Guid PositionId { get; set; }
 
-        public int SortOrder { get ; set ; }
+        public int SortOrder { get; set; }
         public Status Status { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? DateModified { get; set; }

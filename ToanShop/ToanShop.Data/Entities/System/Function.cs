@@ -8,13 +8,13 @@ using ToanShop.Infrastructure.SharedKernel;
 namespace ToanShop.Data.Entities
 {
     [Table("Functions")]
-    public class Function : DomainEntity<Guid>, ISwitchable, ISortable,IHasUniqueCode
+    public class Function : DomainEntity<Guid>, ISwitchable, ISortable, IHasUniqueCode
     {
         public Function()
         {
         }
 
-        public Function(string name, string url, Guid? parentId, 
+        public Function(string name, string url, Guid? parentId,
             string cssClass, int sortOrder)
         {
             Name = name;

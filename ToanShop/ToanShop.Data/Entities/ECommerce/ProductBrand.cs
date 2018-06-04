@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 using ToanShop.Data.Interfaces;
 using ToanShop.Infrastructure.Enums;
 using ToanShop.Infrastructure.SharedKernel;
@@ -15,6 +13,7 @@ namespace ToanShop.Data.Entities.ECommerce
         public ProductBrand()
         {
         }
+
         public ProductBrand(Guid id, string name, string code, string description, Guid? parentId, int? homeOrder, string image, bool? homeFlag,
             int sortOrder, Status status, string seoPageTitle, string seoAlias, string seoKeywords, string seoDescriptions)
         {
@@ -33,6 +32,7 @@ namespace ToanShop.Data.Entities.ECommerce
             SeoKeywords = seoKeywords;
             SeoDescription = seoDescriptions;
         }
+
         [Required]
         [MaxLength(256)]
         public string Name { set; get; }
@@ -53,15 +53,15 @@ namespace ToanShop.Data.Entities.ECommerce
         [MaxLength(256)]
         public string Image { set; get; }
 
-        public bool? HomeFlag { set; get;}
-        public string SeoPageTitle { get ; set ; }
-        public string SeoAlias { get ; set ; }
-        public string SeoKeywords { get ; set ; }
-        public string SeoDescription { get ; set ; }
-        public Status Status { get ; set ; }
-        public int SortOrder { get ; set ; }
-        public DateTime DateCreated { get ; set ; }
-        public DateTime? DateModified { get ; set ; }
-        public DateTime? DateDeleted { get ; set ; }
+        public bool? HomeFlag { set; get; }
+        public string SeoPageTitle { get; set; }
+        public string SeoAlias { get; set; }
+        public string SeoKeywords { get; set; }
+        public string SeoDescription { get; set; }
+        public Status Status { get; set; }
+        public int SortOrder { get; set; }
+        public DateTime DateCreated { get; set; }
+        public DateTime? DateModified { get; set; }
+        public DateTime? DateDeleted { get; set; }
     }
 }

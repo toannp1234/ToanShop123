@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using ToanShop.Data.Interfaces;
@@ -9,7 +8,7 @@ using ToanShop.Infrastructure.SharedKernel;
 namespace ToanShop.Data.Entities
 {
     [Table("Posts")]
-    public class Post : DomainEntity<Guid>, ISwitchable, 
+    public class Post : DomainEntity<Guid>, ISwitchable,
         IDateTracking, IHasSeoMetaData
     {
         public Post()
@@ -90,6 +89,7 @@ namespace ToanShop.Data.Entities
 
         [MaxLength(256)]
         public string SeoDescription { set; get; }
+
         public DateTime? DateDeleted { set; get; }
     }
 }

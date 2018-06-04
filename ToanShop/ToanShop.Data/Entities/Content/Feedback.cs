@@ -14,7 +14,7 @@ namespace ToanShop.Data.Entities
         {
         }
 
-        public Feedback(Guid id, string name, string email, 
+        public Feedback(Guid id, string name, string email,
             string message, Status status)
         {
             Id = id;

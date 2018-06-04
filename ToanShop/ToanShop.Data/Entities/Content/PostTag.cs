@@ -10,6 +10,5 @@ namespace ToanShop.Data.Entities
         public Guid PostId { set; get; }
 
         public string TagId { set; get; }
-
     }
 }
