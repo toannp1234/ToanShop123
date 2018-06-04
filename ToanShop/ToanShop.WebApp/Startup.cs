@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ToanShop.WebApp.Data;
-using ToanShop.WebApp.Models;
+using ToanShop.Data.Entities;
+using ToanShop.DataEF;
 using ToanShop.WebApp.Services;
 
 namespace ToanShop.WebApp
@@ -22,11 +22,11 @@ namespace ToanShop.WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("AppDbConnection"),b=>b.MigrationsAssembly("ToanShop.Data.EF")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
             // Add application services.

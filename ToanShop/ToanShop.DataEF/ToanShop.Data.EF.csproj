@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ToanShop.Data\ToanShop.Data.csproj" />
     <ProjectReference Include="..\ToanShop.Infrastructure\ToanShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\ToanShop.Utilities\ToanShop.Utilities.csproj" />
   </ItemGroup>
 
 </Project>
