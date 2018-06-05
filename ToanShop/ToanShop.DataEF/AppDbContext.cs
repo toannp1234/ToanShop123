@@ -17,7 +17,7 @@ using ToanShop.Data.Entities.Content;
 using ToanShop.Data.Interfaces;
 using ToanShop.Infrastructure.SharedKernel;
 
-namespace ToanShop.DataEF
+namespace ToanShop.Data.EF
 {
     public class AppDbContext : IdentityDbContext<AppUser, AppRole, Guid>
     {

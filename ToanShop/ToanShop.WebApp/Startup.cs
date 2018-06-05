@@ -4,8 +4,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ToanShop.Data.EF;
 using ToanShop.Data.Entities;
-using ToanShop.DataEF;
+
 using ToanShop.WebApp.Services;
 
 namespace ToanShop.WebApp
@@ -30,13 +31,16 @@ namespace ToanShop.WebApp
                 .AddDefaultTokenProviders();
 
             // Add application services.
+            services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();// gioi han scope 
+            services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
+            //
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddTransient<DbInitializer>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,DbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -59,6 +63,7 @@ namespace ToanShop.WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+           // dbInitializer.Seed().Wait();
         }
     }
 }
