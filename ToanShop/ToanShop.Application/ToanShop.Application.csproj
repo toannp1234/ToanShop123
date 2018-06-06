@@ -6,21 +6,21 @@
 
   <ItemGroup>
     <Folder Include="AutoMapper\" />
-    <Folder Include="ImplementService\Advs\" />
     <Folder Include="ImplementService\Content\" />
     <Folder Include="ImplementService\ECommerce\" />
     <Folder Include="ImplementService\System\" />
-    <Folder Include="InterfaceService\Advs\" />
-    <Folder Include="InterfaceService\Content\" />
     <Folder Include="InterfaceService\ECommerce\" />
     <Folder Include="InterfaceService\System\" />
-    <Folder Include="ViewModel\Advs\" />
-    <Folder Include="ViewModel\Content\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ToanShop.Data\ToanShop.Data.csproj" />
     <ProjectReference Include="..\ToanShop.Infrastructure\ToanShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\ToanShop.Utilities\ToanShop.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

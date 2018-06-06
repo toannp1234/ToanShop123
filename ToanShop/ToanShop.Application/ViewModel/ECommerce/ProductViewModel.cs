@@ -13,6 +13,8 @@ namespace ToanShop.Application.ViewModel.ECommerce
 
         [Required]
         public Guid CategoryId { set; get; }
+        [Required]
+        public Guid BrandId { set; get; }
 
         [MaxLength(256)]
         public string ThumbnailImage { set; get; }
