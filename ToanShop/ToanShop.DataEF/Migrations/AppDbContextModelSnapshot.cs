@@ -16,14 +16,12 @@ namespace ToanShop.Data.EF.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.0-rtm-30799")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("ClaimType");
 
@@ -39,8 +37,7 @@ namespace ToanShop.Data.EF.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("ClaimType");
 
@@ -332,7 +329,7 @@ namespace ToanShop.Data.EF.Migrations
                     b.ToTable("BillDetails");
                 });
 
-            modelBuilder.Entity("ToanShop.Data.Entities.Content.ContactDetail", b =>
+            modelBuilder.Entity("ToanShop.Data.Entities.ContactDetail", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd()

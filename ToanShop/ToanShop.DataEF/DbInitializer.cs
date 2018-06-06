@@ -39,7 +39,7 @@ namespace ToanShop.Data.EF
             }
             if (!_userManager.Users.Any())
             {
-                await _userManager.CreateAsync(new AppUser()
+                var result = await _userManager.CreateAsync(new AppUser()
                 {
                     Id = Guid.NewGuid(),
                     UserName = "admin",
@@ -47,8 +47,12 @@ namespace ToanShop.Data.EF
                     Email = "admin@gmail.com",
                     Balance = 0,
                 }, "123654$");
-                var user = await _userManager.FindByNameAsync("admin");
-                await _userManager.AddToRoleAsync(user, "Admin");
+                if (result.Succeeded)
+                {
+                    var user = await _userManager.FindByNameAsync("admin");
+                    await _userManager.AddToRoleAsync(user, "Admin");
+                }
+
             }
 
             if (!_context.Functions.Any())

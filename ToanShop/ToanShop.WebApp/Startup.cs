@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using ToanShop.Data.EF;
 using ToanShop.Data.Entities;
 
@@ -29,6 +30,22 @@ namespace ToanShop.WebApp
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+            //config password policy
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromHours(3);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
 
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();// gioi han scope 
@@ -63,7 +80,7 @@ namespace ToanShop.WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-           // dbInitializer.Seed().Wait();
+           //dbInitializer.Seed().Wait();
         }
     }
 }
