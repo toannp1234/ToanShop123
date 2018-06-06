@@ -28,4 +28,4 @@ namespace ToanShop.Application.ViewModel.System
         public virtual ICollection<AnnouncementUserViewModel> AnnouncementUsers { get; set; }
     }
 }
-}
+

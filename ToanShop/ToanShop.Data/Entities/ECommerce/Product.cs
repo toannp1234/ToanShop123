@@ -16,7 +16,11 @@ namespace ToanShop.Data.Entities
         {
         }
 
-        public Product(Guid id, string name, string code, Guid categoryId,Guid brandId, string thumbnailImage,
+        public Product(Guid id)
+        {
+        }
+
+        public Product(Guid id, string name, string code, Guid categoryId, string thumbnailImage,
              decimal price, decimal originalPrice, decimal? promotionPrice,
              string description, string content, bool? homeFlag, bool? hotFlag,
              string tags, int quantity, string unit, Status status, string seoPageTitle,
@@ -27,7 +31,7 @@ namespace ToanShop.Data.Entities
             Name = name;
             Code = code;
             CategoryId = categoryId;
-            BrandId = brandId;
+            
             ThumbnailImage = thumbnailImage;
             Price = price;
             OriginalPrice = originalPrice;
@@ -55,8 +59,8 @@ namespace ToanShop.Data.Entities
 
         [Required]
         public Guid CategoryId { set; get; }
-        [Required]
-        public Guid BrandId { set; get; }
+        
+       
 
         [MaxLength(256)]
         public string ThumbnailImage { set; get; }

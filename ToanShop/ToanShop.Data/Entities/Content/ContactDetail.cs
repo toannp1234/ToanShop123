@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using ToanShop.Infrastructure.Enums;
 using ToanShop.Infrastructure.SharedKernel;
 
-namespace ToanShop.Data.Entities.Content
+namespace ToanShop.Data.Entities
 {
     [Table("ContactDetails")]
     public class ContactDetail : DomainEntity<string>

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
+using ToanShop.Infrastructure.Enums;
 
 namespace ToanShop.Application.ViewModel.Content
 {

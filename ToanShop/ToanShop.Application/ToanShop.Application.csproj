@@ -5,16 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
-    <Folder Include="ImplementService\Content\" />
-    <Folder Include="ImplementService\ECommerce\" />
-    <Folder Include="ImplementService\System\" />
-    <Folder Include="InterfaceService\ECommerce\" />
-    <Folder Include="InterfaceService\System\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="7.0.0" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
   </ItemGroup>
 
   <ItemGroup>

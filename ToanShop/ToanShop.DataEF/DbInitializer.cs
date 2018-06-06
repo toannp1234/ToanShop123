@@ -5,8 +5,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using ToanShop.Data.Entities;
 using ToanShop.Data.Entities.Advs;
-using ToanShop.Data.Entities.Content;
-using ToanShop.Data.EF;
 using ToanShop.Infrastructure.Enums;
 using ToanShop.Utilities.Constants;
 

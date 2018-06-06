@@ -5,15 +5,12 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using ToanShop.Data.EF.Configurations;
 using ToanShop.Data.EF.Extensions;
 using ToanShop.Data.Entities;
 using ToanShop.Data.Entities.Advs;
-using ToanShop.Data.Entities.Content;
 using ToanShop.Data.Interfaces;
 using ToanShop.Infrastructure.SharedKernel;
 
