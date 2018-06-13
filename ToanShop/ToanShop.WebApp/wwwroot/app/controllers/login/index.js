@@ -8,12 +8,12 @@
             errorClass: 'red',
             ignore: [],
             lang: 'en',
-            rules: {
+            rule: {
                 userName: {
                     required: true
                 },
                 password: {
-                    required: true
+                    required: true 
                 }
             }
         });

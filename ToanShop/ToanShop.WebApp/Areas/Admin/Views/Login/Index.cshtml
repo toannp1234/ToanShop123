@@ -37,10 +37,10 @@
                         @Html.AntiForgeryToken()
                         <h1>Login Form</h1>
                         <div>
-                            <input type="text" class="form-control" name="userName" placeholder="User name" id="txtUserName" required="" />
+                            <input type="text" class="form-control"  name="userName" placeholder="User name" id="txtUserName" required="" />
                         </div>
                         <div>
-                            <input type="password" class="form-control" name="password" id="txtPassword" placeholder="Password" required="" />
+                            <input type="password" class="form-control"  name="password" id="txtPassword" placeholder="Password" required="" />
                         </div>
                         <div>
                             <a class="btn btn-default submit" href="#" id="btnLogin">Login</a>
@@ -100,10 +100,12 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/notifyjs/dist/notify.js"></script>
     <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
-
+    @* validated *@
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    @* Tieng Viet *@
+    <script src="~/lib/jquery-validation/localization/messages_vi.js"></script>
 
     <script src="~/app/shared/shared.js"></script>
     <script src="~/app/controllers/login/index.js"></script>
