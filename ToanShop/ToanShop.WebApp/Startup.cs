@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -7,8 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using System;
+using ToanShop.Application.ImplementService.System;
+using ToanShop.Application.InterfaceService.System;
 using ToanShop.Data.EF;
 using ToanShop.Data.Entities;
+using ToanShop.Infrastructure.Interfaces;
 using ToanShop.WebApp.Helpers;
 using ToanShop.WebApp.Services;
 
@@ -29,6 +33,7 @@ namespace ToanShop.WebApp
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("AppDbConnection"),b=>b.MigrationsAssembly("ToanShop.Data.EF")));
 
+            
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
@@ -48,15 +53,21 @@ namespace ToanShop.WebApp
                 // User settings
                 options.User.RequireUniqueEmail = true;
             });
-
+            services.AddAutoMapper();
+            // Add application services. repository and unit of work
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddScoped(typeof(IRepository<,>), typeof(EFRepository<,>));
             // Add application services.
+            services.AddScoped<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();// gioi han scope 
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
             //
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>,CustomClaimsPrincipalFactory>();
-            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver()); 
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddTransient<IFunctionService, FunctionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,10 +94,8 @@ namespace ToanShop.WebApp
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(
-                    name : "areaRoute",
-                    template:"{area:exists}/{controller=Login}/{action=Index}/{id?}"
-                    );
+                routes.MapRoute(name: "areaRoute",
+                       template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
 
             });
            //dbInitializer.Seed().Wait();
