@@ -8,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using System;
+using ToanShop.Application.ImplementService.ECommerce;
 using ToanShop.Application.ImplementService.System;
+using ToanShop.Application.InterfaceService.ECommerce;
 using ToanShop.Application.InterfaceService.System;
 using ToanShop.Data.EF;
 using ToanShop.Data.Entities;
@@ -68,6 +70,7 @@ namespace ToanShop.WebApp
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             services.AddTransient<IFunctionService, FunctionService>();
+            services.AddTransient<IProductService, ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

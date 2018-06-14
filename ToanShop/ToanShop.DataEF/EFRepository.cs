@@ -218,5 +218,6 @@ namespace ToanShop.Data.EF
         {
             return GetAll(isAll).Where(predicate);
         }
+        
     }
 }

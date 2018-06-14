@@ -43,6 +43,7 @@ namespace ToanShop.Application.ImplementService.ECommerce
             _productWishlistRepository = productWishlistRepository;
 
         }
+        
 
         public override void Add(ProductViewModel productVm)
         {
@@ -84,7 +85,7 @@ namespace ToanShop.Application.ImplementService.ECommerce
             }
             _productRepository.Insert(product);
         }
-
+        
         public PagedResult<ProductViewModel> GetAllPaging(Guid? categoryId, string keyword, int page, int pageSize, string sortBy)
         {
             var query = _productRepository.GetAll().Where(c => c.Status == Status.Actived);

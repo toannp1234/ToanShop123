@@ -7,6 +7,7 @@ using ToanShop.Infrastructure.SharedKernel;
 
 namespace ToanShop.Infrastructure.Interfaces
 {
+     
     //
     // Summary:
     //     This interface is implemented by all repositories to ensure implementation of
@@ -20,6 +21,7 @@ namespace ToanShop.Infrastructure.Interfaces
     //     Primary key type of the entity
     public interface IRepository<TEntity, TPrimaryKey> where TEntity : DomainEntity<TPrimaryKey>
     {
+       
         //
         // Summary:
         //     Gets count of all entities in this repository.
@@ -118,6 +120,7 @@ namespace ToanShop.Infrastructure.Interfaces
         //   predicate:
         //     Predicate to filter entities
         Task<TEntity> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
+        
 
         //
         // Summary:
