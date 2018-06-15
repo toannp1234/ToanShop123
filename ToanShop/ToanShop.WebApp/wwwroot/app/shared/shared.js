@@ -38,7 +38,6 @@
     },
     confirm: function (message, okCallback) {
         bootbox.confirm({
-            size: "small",
             message: message,
             buttons: {
                 confirm: {
@@ -46,7 +45,7 @@
                     className: 'btn-success'
                 },
                 cancel: {
-                    label: 'Huỷ',
+                    label: 'Hủy',
                     className: 'btn-danger'
                 }
             },
@@ -54,14 +53,13 @@
                 if (result === true) {
                     okCallback();
                 }
-
             }
         });
     },
     dateFormatJson: function (datetime) {
-        if (datetime == null || datetime === '')
+        if (datetime == null || datetime == '')
             return '';
-        var newdate = new Date(datetime);
+        var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -78,9 +76,9 @@
         return day + "/" + month + "/" + year;
     },
     dateTimeFormatJson: function (datetime) {
-        if (datetime === null || datetime === '')
+        if (datetime == null || datetime == '')
             return '';
-        var newdate = new Date(datetime);
+        var newdate = new Date(parseInt(datetime.substr(6)));
         var month = newdate.getMonth() + 1;
         var day = newdate.getDate();
         var year = newdate.getFullYear();
@@ -109,11 +107,10 @@
                 .addClass('hide');
     },
     getStatus: function (status) {
-        if (status === 1)
+        if (status == 1)
             return '<span class="badge bg-green">Kích hoạt</span>';
         else
             return '<span class="badge bg-red">Khoá</span>';
-
     },
     formatNumber: function (number, precision) {
         if (!isFinite(number)) {
@@ -138,23 +135,9 @@
             }
         }
         return roots;
-    },
-    unflattern1: function (arr) {
-        var map = {};
-        var roots = [];
-        for (var i = 0; i < arr.length; i += 1) {
-            var node = arr[i];
-            node.children = [];
-            map[node.id] = i; // use map to look-up the parents
-            if (node.parentId !== null) {
-                arr[map[node.parentId]].children.push(node);
-            } else {
-                roots.push(node);
-            }
-        }
-        return roots;
     }
 }
+
 $(document).ajaxSend(function (e, xhr, options) {
     if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
         var token = $('form').find("input[name='__RequestVerificationToken']").val();

@@ -8,12 +8,12 @@
             errorClass: 'red',
             ignore: [],
             lang: 'en',
-            rule: {
+            rules: {
                 userName: {
                     required: true
                 },
                 password: {
-                    required: true 
+                    required: true
                 }
             }
         });
@@ -24,7 +24,7 @@
                 var password = $('#txtPassword').val();
                 login(user, password);
             }
-
+           
         });
     }
 
@@ -42,7 +42,7 @@
                     window.location.href = "/Admin/Home/Index";
                 }
                 else {
-                    shared.notify('Login failed', 'error');
+                   shared.notify('Login failed', 'error');
                 }
             }
         })

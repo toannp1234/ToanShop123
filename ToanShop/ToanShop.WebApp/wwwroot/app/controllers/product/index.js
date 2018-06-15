@@ -2,9 +2,11 @@
     this.initialize = function () {
         loadData();
     }
-    function RegisterEvents() {
 
+    function registerEvents() {
+        //todo: binding events to controls
     }
+
     function loadData() {
         var template = $('#table-template').html();
         var render = "";
@@ -34,4 +36,4 @@
             }
         })
     }
- }
+}
