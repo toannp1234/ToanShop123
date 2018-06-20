@@ -88,13 +88,11 @@ namespace ToanShop.Application.ImplementService.ECommerce
         
         public PagedResult<ProductViewModel> GetAllPaging(Guid? categoryId, string keyword, int page, int pageSize, string sortBy)
         {
-            var query = _productRepository.GetAll().Where(c => c.Status == Status.Actived);
+            var query = _productRepository.GetAll(x => x.Status == Status.Actived);
             if (!string.IsNullOrEmpty(keyword))
-                query = query.Where(x => x.Name.Contains(keyword) || x.Code.Contains(keyword));
-
+                query = query.Where(x => x.Name.Contains(keyword));
             if (categoryId.HasValue)
                 query = query.Where(x => x.CategoryId == categoryId.Value);
-
             int totalRow = query.Count();
             switch (sortBy)
             {
@@ -114,19 +112,19 @@ namespace ToanShop.Application.ImplementService.ECommerce
                     query = query.OrderByDescending(x => x.DateCreated);
                     break;
             }
-            query = query.Skip((page - 1) * pageSize)
-                .Take(pageSize);
-
+            query = query.OrderByDescending(x => x.DateCreated).
+                Skip((page - 1) * pageSize).Take(pageSize);
             var data = query.ProjectTo<ProductViewModel>().ToList();
+
             var paginationSet = new PagedResult<ProductViewModel>()
             {
                 Results = data,
-                CurrentPage = page,
-                RowCount = totalRow,
-                PageSize = pageSize
+            CurrentPage = page,
+            RowCount=totalRow,
+            PageSize=pageSize  
             };
-
             return paginationSet;
+
         }
 
         public override void Update(ProductViewModel productVm)

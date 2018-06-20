@@ -1,0 +1,723 @@
+2018-06-16T12:27:49.7805139+07:00  [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:27:50.2474067+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.2962648+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.3233894+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.4528071+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:27:50.4801867+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ContactDetails] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:27:50.5075556+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertistmentPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.5346014+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.5624359+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.5914339+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.6186876+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:50.6448152+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:27:51.0702736+07:00 0HLEJ97JKPOCI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/   (ca22a1cb)
+2018-06-16T12:27:51.0670187+07:00 0HLEJ97JKPOCH:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50661/  0 (ca22a1cb)
+2018-06-16T12:27:51.1127985+07:00 0HLEJ97JKPOCH:00000001 [INF] Request finished in 74.5121ms 200  (791a596a)
+2018-06-16T12:27:51.3164825+07:00 0HLEJ97JKPOCI:00000001 [INF] Executing action method "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:27:53.5150559+07:00 0HLEJ97JKPOCI:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:27:54.0662087+07:00 0HLEJ97JKPOCI:00000001 [INF] Executed action "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" in 2768.411ms (afa2e885)
+2018-06-16T12:27:54.0757818+07:00 0HLEJ97JKPOCI:00000001 [INF] Request finished in 3056.2949ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:27:54.1161279+07:00 0HLEJ97JKPOCH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/js/site.js?v=7mkNbU1tgQL1bUeZe3j2R151hKLhLDKO4BBaR-iqCy0   (ca22a1cb)
+2018-06-16T12:27:54.1289408+07:00 0HLEJ97JKPOCH:00000002 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\js\site.js"' (27b0a520)
+2018-06-16T12:27:54.1921869+07:00 0HLEJ97JKPOCH:00000002 [INF] Request finished in 33.6101ms 200 application/javascript (791a596a)
+2018-06-16T12:27:54.1937225+07:00 0HLEJ97JKPOCI:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-06-16T12:27:54.2015399+07:00 0HLEJ97JKPOCI:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-06-16T12:27:54.2112415+07:00 0HLEJ97JKPOCI:00000002 [INF] Request finished in 61.2157ms 200 font/woff2 (791a596a)
+2018-06-16T12:28:12.3384038+07:00 0HLEJ97JKPOCH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:28:12.3740326+07:00 0HLEJ97JKPOCH:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2018-06-16T12:28:12.3839777+07:00 0HLEJ97JKPOCH:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-06-16T12:28:12.4129850+07:00 0HLEJ97JKPOCH:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-06-16T12:28:12.4332289+07:00 0HLEJ97JKPOCH:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-06-16T12:28:12.4373753+07:00 0HLEJ97JKPOCH:00000003 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 91.5153ms (afa2e885)
+2018-06-16T12:28:12.4417155+07:00 0HLEJ97JKPOCH:00000003 [INF] Request finished in 106.3801ms 302  (791a596a)
+2018-06-16T12:28:12.4692443+07:00 0HLEJ97JKPOCI:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2018-06-16T12:28:12.5455474+07:00 0HLEJ97JKPOCI:00000003 [INF] Executing action method "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:12.6000835+07:00 0HLEJ97JKPOCI:00000003 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-06-16T12:28:13.0576137+07:00 0HLEJ97JKPOCI:00000003 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-06-16T12:28:13.2565897+07:00 0HLEJ97JKPOCI:00000003 [INF] Executed action "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" in 736.823ms (afa2e885)
+2018-06-16T12:28:13.2818534+07:00 0HLEJ97JKPOCI:00000003 [INF] Request finished in 812.6861ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:13.3908996+07:00 0HLEJ97JKPOCH:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Account/Login?ReturnUrl=%2Fadmin   (ca22a1cb)
+2018-06-16T12:28:13.3972459+07:00 0HLEJ97JKPOCH:00000004 [INF] Executing action method "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" with arguments (["/admin"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:13.4227199+07:00 0HLEJ97JKPOCH:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-06-16T12:28:13.4476063+07:00 0HLEJ97JKPOCH:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2018-06-16T12:28:13.4611000+07:00 0HLEJ97JKPOCH:00000004 [INF] Executed action "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" in 66.1131ms (afa2e885)
+2018-06-16T12:28:13.4658129+07:00 0HLEJ97JKPOCH:00000004 [INF] Request finished in 74.6941ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:16.4154068+07:00 0HLEJ97JKPOCI:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44326/Account/Login?returnurl=%2Fadmin application/x-www-form-urlencoded 233 (ca22a1cb)
+2018-06-16T12:28:16.4590520+07:00 0HLEJ97JKPOCI:00000004 [INF] Executing action method "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" with arguments (["ToanShop.WebApp.Models.AccountViewModels.LoginViewModel", "/admin"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:16.4734607+07:00 0HLEJ97JKPOCI:00000004 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:16.6039761+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateDeleted], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-06-16T12:28:16.8847887+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-06-16T12:28:16.9760192+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:17.0125374+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-06-16T12:28:17.0592260+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-06-16T12:28:17.0706180+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:17.0931000+07:00 0HLEJ97JKPOCI:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-06-16T12:28:17.1209598+07:00 0HLEJ97JKPOCI:00000004 [INF] User logged in. (fdce0db4)
+2018-06-16T12:28:17.1464973+07:00 0HLEJ97JKPOCI:00000004 [INF] Executing RedirectResult, redirecting to "/admin". (d98d540e)
+2018-06-16T12:28:17.1724854+07:00 0HLEJ97JKPOCI:00000004 [INF] Executed action "ToanShop.WebApp.Controllers.AccountController.Login (ToanShop.WebApp)" in 725.8325ms (afa2e885)
+2018-06-16T12:28:17.1800954+07:00 0HLEJ97JKPOCI:00000004 [INF] Request finished in 763.6258ms 302  (791a596a)
+2018-06-16T12:28:17.2072485+07:00 0HLEJ97JKPOCH:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:28:17.2456469+07:00 0HLEJ97JKPOCH:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:17.2708343+07:00 0HLEJ97JKPOCH:00000005 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:17.4646996+07:00 0HLEJ97JKPOCH:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:28:17.5015951+07:00 0HLEJ97JKPOCH:00000005 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 276.0838ms (afa2e885)
+2018-06-16T12:28:17.5063281+07:00 0HLEJ97JKPOCH:00000005 [INF] Request finished in 319.2213ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:17.5285920+07:00 0HLEJ97JKPOCI:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/app/shared/shared.js   (ca22a1cb)
+2018-06-16T12:28:17.5307115+07:00 0HLEJ97JKPOCH:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44326/app/controllers/login/index.js   (ca22a1cb)
+2018-06-16T12:28:17.5631246+07:00 0HLEJ97JKPOCI:00000005 [INF] The file "/app/shared/shared.js" was not modified (f1f8d725)
+2018-06-16T12:28:17.5643905+07:00 0HLEJ97JKPOCH:00000006 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2018-06-16T12:28:17.6133041+07:00 0HLEJ97JKPOCH:00000006 [INF] Request finished in 43.0779ms 304 application/javascript (791a596a)
+2018-06-16T12:28:17.6145537+07:00 0HLEJ97JKPOCI:00000005 [INF] Request finished in 43.9592ms 304 application/javascript (791a596a)
+2018-06-16T12:28:18.8681385+07:00 0HLEJ97JKPOCI:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:44326/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-06-16T12:28:18.9045470+07:00 0HLEJ97JKPOCI:00000006 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" with arguments (["ToanShop.WebApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:18.9312884+07:00 0HLEJ97JKPOCI:00000006 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:18.9581840+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateDeleted], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-06-16T12:28:18.9930164+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-06-16T12:28:19.0197369+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:19.0452320+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-06-16T12:28:19.0698987+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-06-16T12:28:19.0947844+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:19.1204069+07:00 0HLEJ97JKPOCI:00000006 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-06-16T12:28:19.1469297+07:00 0HLEJ97JKPOCI:00000006 [INF] User logged in. (fdce0db4)
+2018-06-16T12:28:19.1764582+07:00 0HLEJ97JKPOCI:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:28:19.2396199+07:00 0HLEJ97JKPOCI:00000006 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" in 340.1648ms (afa2e885)
+2018-06-16T12:28:19.2854432+07:00 0HLEJ97JKPOCI:00000006 [INF] Request finished in 396.2531ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:28:19.3131001+07:00 0HLEJ97JKPOCH:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Admin/Home/Index   (ca22a1cb)
+2018-06-16T12:28:19.3407550+07:00 0HLEJ97JKPOCH:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:19.3453405+07:00 0HLEJ97JKPOCH:00000007 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:19.4621958+07:00 0HLEJ97JKPOCH:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:28:19.6772487+07:00 0HLEJ97JKPOCH:00000007 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:19.7605635+07:00 0HLEJ97JKPOCH:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:28:20.0518630+07:00 0HLEJ97JKPOCH:00000007 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" in 712.4577ms (afa2e885)
+2018-06-16T12:28:20.0590605+07:00 0HLEJ97JKPOCH:00000007 [INF] Request finished in 790.5165ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:20.0775844+07:00 0HLEJ97JKPOCI:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:28:20.0860513+07:00 0HLEJ97JKPOCI:00000007 [INF] Request finished in 6.2837ms 404  (791a596a)
+2018-06-16T12:28:20.1459359+07:00 0HLEJ97JKPOCH:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:28:20.1500275+07:00 0HLEJ97JKPOCH:00000008 [INF] Request finished in 3.5088ms 404  (791a596a)
+2018-06-16T12:28:27.3448233+07:00 0HLEJ97JKPOCI:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:44326/Admin/Home/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-06-16T12:28:27.3509370+07:00 0HLEJ97JKPOCI:00000008 [INF] Request finished in 25.8382ms 404  (791a596a)
+2018-06-16T12:28:30.9713884+07:00 0HLEJ97JKPOCH:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:28:30.9981157+07:00 0HLEJ97JKPOCH:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:31.0034634+07:00 0HLEJ97JKPOCH:00000009 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:31.0293813+07:00 0HLEJ97JKPOCH:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:28:31.0543259+07:00 0HLEJ97JKPOCH:00000009 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 58.0163ms (afa2e885)
+2018-06-16T12:28:31.0596617+07:00 0HLEJ97JKPOCH:00000009 [INF] Request finished in 88.9048ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:31.6759634+07:00 0HLEJ97JKPOCI:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:28:31.6811907+07:00 0HLEJ97JKPOCI:00000009 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:31.6858626+07:00 0HLEJ97JKPOCI:00000009 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:31.7105025+07:00 0HLEJ97JKPOCI:00000009 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:28:31.7152920+07:00 0HLEJ97JKPOCI:00000009 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 34.4628ms (afa2e885)
+2018-06-16T12:28:31.7228720+07:00 0HLEJ97JKPOCI:00000009 [INF] Request finished in 44.2137ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:33.1933990+07:00 0HLEJ97JKPOCH:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:44326/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-06-16T12:28:33.1994411+07:00 0HLEJ97JKPOCH:0000000A [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" with arguments (["ToanShop.WebApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:33.2244302+07:00 0HLEJ97JKPOCH:0000000A [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:33.2515473+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateDeleted], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-06-16T12:28:33.2867433+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-06-16T12:28:33.3132257+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:33.3393443+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-06-16T12:28:33.3653486+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-06-16T12:28:33.3914432+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:28:33.4161456+07:00 0HLEJ97JKPOCH:0000000A [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-06-16T12:28:33.4397764+07:00 0HLEJ97JKPOCH:0000000A [INF] User logged in. (fdce0db4)
+2018-06-16T12:28:33.4638860+07:00 0HLEJ97JKPOCH:0000000A [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:28:33.4884346+07:00 0HLEJ97JKPOCH:0000000A [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" in 270.3058ms (afa2e885)
+2018-06-16T12:28:33.4935249+07:00 0HLEJ97JKPOCH:0000000A [INF] Request finished in 299.3759ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:28:33.5238743+07:00 0HLEJ97JKPOCI:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:44326/Admin/Home/Index   (ca22a1cb)
+2018-06-16T12:28:33.5495477+07:00 0HLEJ97JKPOCI:0000000A [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:33.5732889+07:00 0HLEJ97JKPOCI:0000000A [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:33.5979018+07:00 0HLEJ97JKPOCI:0000000A [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:28:33.6028313+07:00 0HLEJ97JKPOCI:0000000A [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:33.6314191+07:00 0HLEJ97JKPOCI:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:28:33.6389522+07:00 0HLEJ97JKPOCI:0000000A [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" in 109.2935ms (afa2e885)
+2018-06-16T12:28:33.6442026+07:00 0HLEJ97JKPOCI:0000000A [INF] Request finished in 140.063ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:33.6608299+07:00 0HLEJ97JKPOCH:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:28:33.6710384+07:00 0HLEJ97JKPOCH:0000000B [INF] Request finished in 6.8654ms 404  (791a596a)
+2018-06-16T12:28:33.7282858+07:00 0HLEJ97JKPOCI:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:28:33.7339560+07:00 0HLEJ97JKPOCI:0000000B [INF] Request finished in 26.2042ms 404  (791a596a)
+2018-06-16T12:28:37.0798646+07:00 0HLEJ97JKPOCH:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:28:37.0853614+07:00 0HLEJ97JKPOCH:0000000C [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:37.1119433+07:00 0HLEJ97JKPOCH:0000000C [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:37.2179545+07:00 0HLEJ97JKPOCH:0000000C [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:28:37.2463209+07:00 0HLEJ97JKPOCH:0000000C [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:37.2714732+07:00 0HLEJ97JKPOCH:0000000C [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:28:37.3214643+07:00 0HLEJ97JKPOCH:0000000C [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 194.5948ms (afa2e885)
+2018-06-16T12:28:37.3262099+07:00 0HLEJ97JKPOCJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/app/controllers/product/index.js   (ca22a1cb)
+2018-06-16T12:28:37.3760051+07:00 0HLEJ97JKPOCH:0000000C [INF] Request finished in 269.761ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:28:37.3779867+07:00 0HLEJ97JKPOCJ:00000001 [INF] Sending file. Request path: '"/app/controllers/product/index.js"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\app\controllers\product\index.js"' (27b0a520)
+2018-06-16T12:28:37.3848678+07:00 0HLEJ97JKPOCJ:00000001 [INF] Request finished in 58.6782ms 200 application/javascript (791a596a)
+2018-06-16T12:28:37.3919306+07:00 0HLEJ97JKPOCI:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:28:37.3974679+07:00 0HLEJ97JKPOCI:0000000C [INF] Request finished in 93.5477ms 404  (791a596a)
+2018-06-16T12:28:37.4383124+07:00 0HLEJ97JKPOCH:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:28:37.4637322+07:00 0HLEJ97JKPOCH:0000000D [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:28:37.4871706+07:00 0HLEJ97JKPOCH:0000000D [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:28:37.5132203+07:00 0HLEJ97JKPOCH:0000000D [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:28:37.5385991+07:00 0HLEJ97JKPOCH:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:28:37.5482899+07:00 0HLEJ97JKPOCH:0000000D [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:28:37.5687716+07:00 0HLEJ97JKPOCH:0000000D [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 124.5341ms (afa2e885)
+2018-06-16T12:28:37.6158229+07:00 0HLEJ97JKPOCH:0000000D [INF] Request finished in 155.5423ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:28:37.6618948+07:00 0HLEJ97JKPOCJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin-side/images/user.png   (ca22a1cb)
+2018-06-16T12:28:37.6883517+07:00 0HLEJ97JKPOCJ:00000002 [INF] Sending file. Request path: '"/admin-side/images/user.png"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\admin-side\images\user.png"' (27b0a520)
+2018-06-16T12:28:37.7143790+07:00 0HLEJ97JKPOCJ:00000002 [INF] Request finished in 98.3507ms 200 image/png (791a596a)
+2018-06-16T12:32:42.8581483+07:00  [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:32:43.2237317+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.2697635+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.2971245+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.4192768+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:32:43.4475081+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ContactDetails] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:32:43.4734502+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertistmentPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.4997103+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.5256450+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.5542304+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.5608026+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.5863575+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:32:43.9881056+07:00 0HLEJ9AAU9P1M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/   (ca22a1cb)
+2018-06-16T12:32:43.9843368+07:00 0HLEJ9AAU9P1L:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50661/  0 (ca22a1cb)
+2018-06-16T12:32:44.0345313+07:00 0HLEJ9AAU9P1L:00000001 [INF] Request finished in 81.3495ms 200  (791a596a)
+2018-06-16T12:32:44.2727934+07:00 0HLEJ9AAU9P1M:00000001 [INF] Executing action method "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:32:46.5487952+07:00 0HLEJ9AAU9P1M:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:32:47.0414566+07:00 0HLEJ9AAU9P1M:00000001 [INF] Executed action "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" in 2788.2564ms (afa2e885)
+2018-06-16T12:32:47.0677918+07:00 0HLEJ9AAU9P1M:00000001 [INF] Request finished in 3116.4551ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:32:54.3836812+07:00 0HLEJ9AAU9P1L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/   (ca22a1cb)
+2018-06-16T12:32:54.4108490+07:00 0HLEJ9AAU9P1L:00000002 [INF] Executing action method "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:32:54.4362323+07:00 0HLEJ9AAU9P1L:00000002 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:32:54.4437889+07:00 0HLEJ9AAU9P1L:00000002 [INF] Executed action "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" in 53.2593ms (afa2e885)
+2018-06-16T12:32:54.4496546+07:00 0HLEJ9AAU9P1L:00000002 [INF] Request finished in 86.9641ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:32:56.6686313+07:00 0HLEJ9AAU9P1M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:32:56.7095080+07:00 0HLEJ9AAU9P1M:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:32:56.7348066+07:00 0HLEJ9AAU9P1M:00000002 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:32:56.9340247+07:00 0HLEJ9AAU9P1M:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:32:56.9621682+07:00 0HLEJ9AAU9P1M:00000002 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 280.5184ms (afa2e885)
+2018-06-16T12:32:56.9900710+07:00 0HLEJ9AAU9P1M:00000002 [INF] Request finished in 300.1811ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:32:57.8838573+07:00 0HLEJ9AAU9P1L:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:32:57.9109310+07:00 0HLEJ9AAU9P1L:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:32:57.9355533+07:00 0HLEJ9AAU9P1L:00000003 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:32:57.9598299+07:00 0HLEJ9AAU9P1L:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:32:57.9846295+07:00 0HLEJ9AAU9P1L:00000003 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 76.1454ms (afa2e885)
+2018-06-16T12:32:57.9898221+07:00 0HLEJ9AAU9P1L:00000003 [INF] Request finished in 105.2711ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:32:59.5744427+07:00 0HLEJ9AAU9P1M:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44326/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-06-16T12:32:59.6630789+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" with arguments (["ToanShop.WebApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:32:59.6762863+07:00 0HLEJ9AAU9P1M:00000003 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:32:59.7907855+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateDeleted], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-06-16T12:33:00.0603555+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-06-16T12:33:00.1557268+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:33:00.1980802+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-06-16T12:33:00.2457788+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-06-16T12:33:00.2793051+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:33:00.3196269+07:00 0HLEJ9AAU9P1M:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-06-16T12:33:00.3474488+07:00 0HLEJ9AAU9P1M:00000003 [INF] User logged in. (fdce0db4)
+2018-06-16T12:33:00.3576492+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:33:00.3983182+07:00 0HLEJ9AAU9P1M:00000003 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" in 790.4592ms (afa2e885)
+2018-06-16T12:33:00.4441800+07:00 0HLEJ9AAU9P1M:00000003 [INF] Request finished in 830.5297ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:33:00.4897990+07:00 0HLEJ9AAU9P1L:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Admin/Home/Index   (ca22a1cb)
+2018-06-16T12:33:00.5150940+07:00 0HLEJ9AAU9P1L:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:33:00.5402661+07:00 0HLEJ9AAU9P1L:00000004 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:33:00.6652549+07:00 0HLEJ9AAU9P1L:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:33:00.8531133+07:00 0HLEJ9AAU9P1L:00000004 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:33:00.9284250+07:00 0HLEJ9AAU9P1L:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:33:01.2879232+07:00 0HLEJ9AAU9P1L:00000004 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" in 773.236ms (afa2e885)
+2018-06-16T12:33:01.3356515+07:00 0HLEJ9AAU9P1L:00000004 [INF] Request finished in 867.6466ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:33:01.3375057+07:00 0HLEJ9AAU9P1M:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:33:01.3646766+07:00 0HLEJ9AAU9P1M:00000004 [INF] Request finished in 49.2006ms 404  (791a596a)
+2018-06-16T12:33:04.4615105+07:00 0HLEJ9AAU9P1L:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:33:04.4672828+07:00 0HLEJ9AAU9P1L:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:33:04.4927716+07:00 0HLEJ9AAU9P1L:00000005 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:33:04.5789728+07:00 0HLEJ9AAU9P1L:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:33:04.6089804+07:00 0HLEJ9AAU9P1L:00000005 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:33:04.6364402+07:00 0HLEJ9AAU9P1L:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:33:04.6486261+07:00 0HLEJ9AAU9P1L:00000005 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 180.507ms (afa2e885)
+2018-06-16T12:33:04.6542791+07:00 0HLEJ9AAU9P1L:00000005 [INF] Request finished in 192.8906ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:33:04.6684426+07:00 0HLEJ9AAU9P1M:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:33:04.6933389+07:00 0HLEJ9AAU9P1M:00000005 [INF] Request finished in 6.1253ms 404  (791a596a)
+2018-06-16T12:33:04.7252093+07:00 0HLEJ9AAU9P1L:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:33:04.7308984+07:00 0HLEJ9AAU9P1L:00000006 [INF] Request finished in 24.6405ms 404  (791a596a)
+2018-06-16T12:33:04.7759477+07:00 0HLEJ9AAU9P1M:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:33:04.7823834+07:00 0HLEJ9AAU9P1M:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:33:04.8081745+07:00 0HLEJ9AAU9P1M:00000006 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:33:04.8132354+07:00 0HLEJ9AAU9P1M:00000006 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:33:04.8399990+07:00 0HLEJ9AAU9P1M:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:33:04.8509403+07:00 0HLEJ9AAU9P1M:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:33:04.8907560+07:00 0HLEJ9AAU9P1M:00000006 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 89.2341ms (afa2e885)
+2018-06-16T12:33:04.8953628+07:00 0HLEJ9AAU9P1M:00000006 [INF] Request finished in 140.0402ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:34:03.9140607+07:00 0HLEJ9AAU9P1L:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:34:03.9396865+07:00 0HLEJ9AAU9P1L:00000007 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:34:03.9443537+07:00 0HLEJ9AAU9P1L:00000007 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:34:04.0299159+07:00 0HLEJ9AAU9P1L:00000007 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:34:04.0569088+07:00 0HLEJ9AAU9P1L:00000007 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:34:04.0845309+07:00 0HLEJ9AAU9P1L:00000007 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:34:04.0974547+07:00 0HLEJ9AAU9P1L:00000007 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 177.4888ms (afa2e885)
+2018-06-16T12:34:04.1033872+07:00 0HLEJ9AAU9P1L:00000007 [INF] Request finished in 209.5612ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:34:04.1215445+07:00 0HLEJ9AAU9P1M:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:34:04.1293207+07:00 0HLEJ9AAU9P1M:00000007 [INF] Request finished in 6.0592ms 404  (791a596a)
+2018-06-16T12:34:04.1979658+07:00 0HLEJ9AAU9P1L:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:34:04.2231688+07:00 0HLEJ9AAU9P1L:00000008 [INF] Request finished in 24.3671ms 404  (791a596a)
+2018-06-16T12:34:04.2300718+07:00 0HLEJ9AAU9P1M:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:34:04.2555074+07:00 0HLEJ9AAU9P1M:00000008 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:34:04.2616946+07:00 0HLEJ9AAU9P1M:00000008 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:34:04.2676305+07:00 0HLEJ9AAU9P1M:00000008 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:34:04.2923320+07:00 0HLEJ9AAU9P1L:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:44326/favicon.ico   (ca22a1cb)
+2018-06-16T12:34:04.2967636+07:00 0HLEJ9AAU9P1M:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:34:04.3215505+07:00 0HLEJ9AAU9P1M:00000008 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:34:04.3477935+07:00 0HLEJ9AAU9P1M:00000008 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 91.2749ms (afa2e885)
+2018-06-16T12:34:04.3547124+07:00 0HLEJ9AAU9P1M:00000008 [INF] Request finished in 121.4676ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:34:04.3861711+07:00 0HLEJ9AAU9P1L:00000009 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\favicon.ico"' (27b0a520)
+2018-06-16T12:34:04.4026345+07:00 0HLEJ9AAU9P1L:00000009 [INF] Request finished in 129.6205ms 200 image/x-icon (791a596a)
+2018-06-16T12:35:07.5070989+07:00 0HLEJ9AAU9P1N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:35:07.5428015+07:00 0HLEJ9AAU9P1N:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:07.5476282+07:00 0HLEJ9AAU9P1N:00000001 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:07.5725416+07:00 0HLEJ9AAU9P1N:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:35:07.5776246+07:00 0HLEJ9AAU9P1N:00000001 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:35:07.5846138+07:00 0HLEJ9AAU9P1N:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:35:07.5902877+07:00 0HLEJ9AAU9P1N:00000001 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 66.7032ms (afa2e885)
+2018-06-16T12:35:07.6086748+07:00 0HLEJ9AAU9P1N:00000001 [INF] Request finished in 111.7771ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:35:07.6154636+07:00 0HLEJ9AAU9P1N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:35:07.6514898+07:00 0HLEJ9AAU9P1N:00000002 [INF] Request finished in 5.3522ms 404  (791a596a)
+2018-06-16T12:35:07.6716661+07:00 0HLEJ9AAU9P1N:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:35:07.6763680+07:00 0HLEJ9AAU9P1N:00000003 [INF] Request finished in 3.6735ms 404  (791a596a)
+2018-06-16T12:35:07.7442155+07:00 0HLEJ9AAU9P1N:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:35:07.7481444+07:00 0HLEJ9AAU9P1N:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:07.7519514+07:00 0HLEJ9AAU9P1N:00000004 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:07.7569541+07:00 0HLEJ9AAU9P1N:00000004 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:35:07.7859011+07:00 0HLEJ9AAU9P1N:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:35:07.8300619+07:00 0HLEJ9AAU9P1O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/favicon.ico   (ca22a1cb)
+2018-06-16T12:35:07.8325435+07:00 0HLEJ9AAU9P1N:00000004 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:35:07.8573219+07:00 0HLEJ9AAU9P1O:00000001 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\favicon.ico"' (27b0a520)
+2018-06-16T12:35:07.8804743+07:00 0HLEJ9AAU9P1N:00000004 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 90.0971ms (afa2e885)
+2018-06-16T12:35:07.9283693+07:00 0HLEJ9AAU9P1N:00000004 [INF] Request finished in 160.1196ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:35:07.9306532+07:00 0HLEJ9AAU9P1O:00000001 [INF] Request finished in 117.0846ms 200 image/x-icon (791a596a)
+2018-06-16T12:35:35.6728265+07:00 0HLEJ9AAU9P1N:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:35:35.6990790+07:00 0HLEJ9AAU9P1N:00000005 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:35.7243461+07:00 0HLEJ9AAU9P1N:00000005 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:35.7485062+07:00 0HLEJ9AAU9P1N:00000005 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:35:35.7732165+07:00 0HLEJ9AAU9P1N:00000005 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:35:35.8007202+07:00 0HLEJ9AAU9P1N:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:35:35.8471613+07:00 0HLEJ9AAU9P1N:00000005 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 128.3759ms (afa2e885)
+2018-06-16T12:35:35.9149180+07:00 0HLEJ9AAU9P1O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:35:35.9160952+07:00 0HLEJ9AAU9P1N:00000005 [INF] Request finished in 201.2772ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:35:35.9424274+07:00 0HLEJ9AAU9P1O:00000002 [INF] Request finished in 93.8259ms 404  (791a596a)
+2018-06-16T12:35:35.9739556+07:00 0HLEJ9AAU9P1N:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:35:36.0191864+07:00 0HLEJ9AAU9P1N:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:36.0904093+07:00 0HLEJ9AAU9P1O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/favicon.ico   (ca22a1cb)
+2018-06-16T12:35:36.1133576+07:00 0HLEJ9AAU9P1N:00000006 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:36.1612954+07:00 0HLEJ9AAU9P1O:00000003 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"C:\Users\avata\Source\Repos\ToanShop123\ToanShop\ToanShop.WebApp\wwwroot\favicon.ico"' (27b0a520)
+2018-06-16T12:35:36.1627607+07:00 0HLEJ9AAU9P1N:00000006 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:35:36.2167079+07:00 0HLEJ9AAU9P1O:00000003 [INF] Request finished in 170.1736ms 200 image/x-icon (791a596a)
+2018-06-16T12:35:36.2391319+07:00 0HLEJ9AAU9P1N:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:35:36.2852671+07:00 0HLEJ9AAU9P1N:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:35:36.3095850+07:00 0HLEJ9AAU9P1N:00000006 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 311.0278ms (afa2e885)
+2018-06-16T12:35:36.3137903+07:00 0HLEJ9AAU9P1N:00000006 [INF] Request finished in 363.4839ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:35:50.2963451+07:00  [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:35:50.6614467+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.7067509+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.7356855+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.8609240+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:35:50.8896236+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__DefaultFooterId_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ContactDetails] AS [x]
+WHERE [x].[Id] = @__DefaultFooterId_0" (0723d8ff)
+2018-06-16T12:35:50.9162034+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AdvertistmentPages] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.9435427+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Slides] AS [s])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.9719413+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProductCategories] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:50.9995868+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:51.0274469+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:51.0537250+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Settings] AS [x]
+        WHERE [x].[UniqueCode] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-06-16T12:35:51.3836217+07:00 0HLEJ9C2PHTM1:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50661/  0 (ca22a1cb)
+2018-06-16T12:35:51.3862121+07:00 0HLEJ9C2PHTM0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44326/   (ca22a1cb)
+2018-06-16T12:35:51.4313780+07:00 0HLEJ9C2PHTM1:00000001 [INF] Request finished in 75.969ms 200  (791a596a)
+2018-06-16T12:35:51.6489954+07:00 0HLEJ9C2PHTM0:00000001 [INF] Executing action method "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:53.9563121+07:00 0HLEJ9C2PHTM0:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:35:54.4099497+07:00 0HLEJ9C2PHTM0:00000001 [INF] Executed action "ToanShop.WebApp.Controllers.HomeController.Index (ToanShop.WebApp)" in 2782.6452ms (afa2e885)
+2018-06-16T12:35:54.4188312+07:00 0HLEJ9C2PHTM0:00000001 [INF] Request finished in 3082.7368ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:35:57.8240894+07:00 0HLEJ9C2PHTM1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:35:57.8410076+07:00 0HLEJ9C2PHTM1:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:57.8674751+07:00 0HLEJ9C2PHTM1:00000002 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:58.0966098+07:00 0HLEJ9C2PHTM1:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:35:58.1264677+07:00 0HLEJ9C2PHTM1:00000002 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 293.6973ms (afa2e885)
+2018-06-16T12:35:58.1312427+07:00 0HLEJ9C2PHTM1:00000002 [INF] Request finished in 308.9539ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:35:59.2997650+07:00 0HLEJ9C2PHTM0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin   (ca22a1cb)
+2018-06-16T12:35:59.3062233+07:00 0HLEJ9C2PHTM0:00000002 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:35:59.3305195+07:00 0HLEJ9C2PHTM0:00000002 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:35:59.3543689+07:00 0HLEJ9C2PHTM0:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2018-06-16T12:35:59.3597083+07:00 0HLEJ9C2PHTM0:00000002 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Index (ToanShop.WebApp)" in 54.8169ms (afa2e885)
+2018-06-16T12:35:59.3649088+07:00 0HLEJ9C2PHTM0:00000002 [INF] Request finished in 64.581ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:36:00.6621643+07:00 0HLEJ9C2PHTM1:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:44326/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-06-16T12:36:00.7532380+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" with arguments (["ToanShop.WebApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:36:00.7673227+07:00 0HLEJ9C2PHTM1:00000003 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:36:00.8822936+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateDeleted], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-06-16T12:36:01.1586280+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-06-16T12:36:01.2453269+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:36:01.2617701+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-06-16T12:36:01.2882342+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-06-16T12:36:01.3228236+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-06-16T12:36:01.3623936+07:00 0HLEJ9C2PHTM1:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-06-16T12:36:01.3898066+07:00 0HLEJ9C2PHTM1:00000003 [INF] User logged in. (fdce0db4)
+2018-06-16T12:36:01.3982341+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:36:01.4406595+07:00 0HLEJ9C2PHTM1:00000003 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.LoginController.Authen (ToanShop.WebApp)" in 745.6697ms (afa2e885)
+2018-06-16T12:36:01.4465195+07:00 0HLEJ9C2PHTM1:00000003 [INF] Request finished in 785.7214ms 200 application/json; charset=utf-8 (791a596a)
+2018-06-16T12:36:01.4761121+07:00 0HLEJ9C2PHTM0:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44326/Admin/Home/Index   (ca22a1cb)
+2018-06-16T12:36:01.5047477+07:00 0HLEJ9C2PHTM0:00000003 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:36:01.5112453+07:00 0HLEJ9C2PHTM0:00000003 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:36:01.6356935+07:00 0HLEJ9C2PHTM0:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2018-06-16T12:36:01.8476282+07:00 0HLEJ9C2PHTM0:00000003 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:36:01.9314762+07:00 0HLEJ9C2PHTM0:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:36:02.2375514+07:00 0HLEJ9C2PHTM0:00000003 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.HomeController.Index (ToanShop.WebApp)" in 755.1345ms (afa2e885)
+2018-06-16T12:36:02.3081502+07:00 0HLEJ9C2PHTM0:00000003 [INF] Request finished in 788.9036ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:36:02.3292518+07:00 0HLEJ9C2PHTM1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:36:02.3567544+07:00 0HLEJ9C2PHTM1:00000004 [INF] Request finished in 91.0977ms 404  (791a596a)
+2018-06-16T12:36:04.2082662+07:00 0HLEJ9C2PHTM0:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/index   (ca22a1cb)
+2018-06-16T12:36:04.2350719+07:00 0HLEJ9C2PHTM0:00000004 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:36:04.2399720+07:00 0HLEJ9C2PHTM0:00000004 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:36:04.3228545+07:00 0HLEJ9C2PHTM0:00000004 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Product/Index.cshtml". (9707eebe)
+2018-06-16T12:36:04.3311797+07:00 0HLEJ9C2PHTM0:00000004 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:36:04.3377014+07:00 0HLEJ9C2PHTM0:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[ParentId], [x].[Status], [x].[Url]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-06-16T12:36:04.3500824+07:00 0HLEJ9C2PHTM0:00000004 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.Index (ToanShop.WebApp)" in 135.0244ms (afa2e885)
+2018-06-16T12:36:04.3583077+07:00 0HLEJ9C2PHTM0:00000004 [INF] Request finished in 148.6026ms 200 text/html; charset=utf-8 (791a596a)
+2018-06-16T12:36:04.3729057+07:00 0HLEJ9C2PHTM1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:36:04.3786009+07:00 0HLEJ9C2PHTM1:00000005 [INF] Request finished in 5.2398ms 404  (791a596a)
+2018-06-16T12:36:04.4260155+07:00 0HLEJ9C2PHTM0:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44326/lib/bootstrap/js/dist/popover.js   (ca22a1cb)
+2018-06-16T12:36:04.4312490+07:00 0HLEJ9C2PHTM0:00000005 [INF] Request finished in 23.5645ms 404  (791a596a)
+2018-06-16T12:36:04.4696157+07:00 0HLEJ9C2PHTM1:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44326/admin/product/GetAll   (ca22a1cb)
+2018-06-16T12:36:04.4742293+07:00 0HLEJ9C2PHTM1:00000006 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2018-06-16T12:36:04.4989240+07:00 0HLEJ9C2PHTM1:00000006 [INF] Executing action method "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2018-06-16T12:36:04.5043472+07:00 0HLEJ9C2PHTM1:00000006 [INF] Entity Framework Core "2.1.0-rtm-30799" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=ToanShop.Data.EF " (9958f5bb)
+2018-06-16T12:36:04.5290283+07:00 0HLEJ9C2PHTM1:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoProduct].[CategoryId], [dtoProduct].[Code], [dtoProduct].[Content], [dtoProduct].[DateCreated], COALESCE([dtoProduct].[DateModified], '0001-01-01T00:00:00.000') AS [DateModified], [dtoProduct].[Description], [dtoProduct].[HomeFlag], [dtoProduct].[HotFlag], [dtoProduct].[Id], [dtoProduct].[Name], [dtoProduct].[OriginalPrice], [dtoProduct].[Price], [dtoProduct].[PromotionPrice], [dtoProduct].[Quantity], [dtoProduct].[SeoAlias], [dtoProduct].[SeoDescription], [dtoProduct].[SeoKeywords], [dtoProduct].[SeoPageTitle], [dtoProduct].[Status], [dtoProduct].[Tags], [dtoProduct].[ThumbnailImage], [dtoProduct].[Unit], [dtoProduct].[ViewCount]
+FROM [Products] AS [dtoProduct]" (0723d8ff)
+2018-06-16T12:36:04.5401688+07:00 0HLEJ9C2PHTM1:00000006 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2018-06-16T12:36:04.5831199+07:00 0HLEJ9C2PHTM1:00000006 [INF] Executed action "ToanShop.WebApp.Areas.Admin.Controllers.ProductController.GetAll (ToanShop.WebApp)" in 86.8941ms (afa2e885)
+2018-06-16T12:36:04.5873860+07:00 0HLEJ9C2PHTM1:00000006 [INF] Request finished in 138.0598ms 200 application/json; charset=utf-8 (791a596a)
