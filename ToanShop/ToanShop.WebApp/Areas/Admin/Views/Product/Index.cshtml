@@ -22,6 +22,10 @@
                     <button class="btn btn-default" type="button">Go!</button>
                 </span>
             </div>
+
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 form-group pull-right top_search">
+            <input id="ddlCategoryIdS" required class="form-control" name="ddlCategoryIdS" value="">
         </div>
     </div>
 </div>
@@ -36,33 +40,59 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Category</th>
-                            <th>Price</th>
-                            <th>Images</th>
-                            <th>Created Date</th>
-                            <th>Status</th>
+                            <th>Mã</th>
+                            <th>Tên sản phẩm</th>
+                            @*<th>Code</th>*@
+                            <th>Danh mục</th>
+                            <th>Giá nhập</th>
+                            <th>Giá bán</th>
+                            <th>Số lượng</th>
+                            <th>Ảnh</th>
+                            <th>Trạng thái</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody id="tbl-content"></tbody>
                 </table>
-
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="dataTables_info" id="datatable-checkbox_info" role="status" aria-live="polite">
+                            <select id="ddl-show-page">
+                                <option value="10" selected="selected">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                                <option value="50">50</option>
+                            </select>
+                            <span class="item-per-page">
+                                bản ghi/trang.
+                            </span>
+                            Tổng số bản ghi: <strong id="lbl-total-records"></strong>
+                        </div>
+                    </div><div class="col-sm-7">
+                        <div class="dataTables_paginate paging_simple_numbers" id="datatable-checkbox_paginate">
+                            <ul id="paginationUL"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <script id="table-template" type="x-tmpl-mustache">
     <tr>
+
+        <td>{{Id}}</td>
+        <td>{{Name}}</td>
+        @*<td>{{Code}}</td>*@
+        <td>{{CategoryName}}</td>
+        <td>{{OriginalPrice}}</td>
+        <td>{{Price}}</td>
+        <td>{{Quantity}}</td>
+        <td>{{{Image}}}</td>
+        <td>{{{Status}}}</td>
         <th scope="row">
             <button class="btn btn-default btn-sm"><i class="fa fa-pencil"></i></button>
             <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
         </th>
-        <td>{{Name}}</td>
-        <td>{{CategoryName}}</td>
-        <td>{{Price}}</td>
-        <td>{{{Image}}}</td>
-        <td>{{CreatedDate}}</td>
-        <td>{{{Status}}}</td>
     </tr>
 </script>
